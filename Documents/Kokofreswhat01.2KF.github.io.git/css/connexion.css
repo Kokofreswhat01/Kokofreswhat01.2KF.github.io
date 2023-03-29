@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background-color: #EBB42C;
+    padding: 0;
+    
+}
+
+.amil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteneur{
+    width: 45%;
+    height: 50%;
+    background: rgba(0,0,0,0.5);
+    padding: 28px;
+    margin: 0 28px;
+    margin-top: 300px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+    
+}
+h1{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+    margin-left: 10px;
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-left: 200px
+}
+.user-input-box:nth-child(5n){
+    justify-content: end;
+}
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box input{
+    width: 60%;
+    padding: 10px;
+    border: none;
+    outline: #012B28;
+}
+
+.user-input-box input:focus{
+    outline: 2px solid #012B28;
+}
+
+.conteneur > a{
+    color: #012B28;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 0px 0px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+
+}
+.user-input-box button{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.form-submit-connexion button{
+    cursor: pointer;
+}
+.form-submit-connexion{
+    margin-top: 30px;
+    margin-left: 370px;
+}
+.form-submit-connexion button{
+    display: block;
+    width: 30%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #012B28;
+}
+.form-submit-connexion button:hover{
+    background: #012B28;
+}
+.form-submit-connexion button:hover a{
+    color: #EBB42C;
+}
+.form-submit-connexion button a{
+    text-decoration: none;
+    color: #fff;
+}
+@media(max-width: 600px){
+    .conteneur{
+        min-width: 280px;
+    }
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .user-input-box:nth-child(5n){
+        justify-content: space-between;
+    }
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+    
+}   
